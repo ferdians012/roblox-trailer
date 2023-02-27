@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Game Trailer Web Roblox</title>
+</head>
+
+<body>
+
+    <video autoplay muted loop id="trailer">
+        <source src="aset/game_trailer.mp4" type="video/mp4">
+    </video>
+    <header>
+        <div class="container">
+            <div class="wrapper">
+                <div class="content">
+                    <ul class="ul">
+                        <li class="li">
+                            <a href="3">ASU</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content1">
+                    <ul class="ul">
+                        <li class="li">
+                            <a href="3">HELLO</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <ul class="ul">
+                        <li class="li">
+                            <a href="3">HELLO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="intro">
+        <center>
+            <img src="aset/roblox-logo.png" alt="roblox-logo" class="img-logo">
+            <p> Serius Aku Gabut Aben Wengi Broo</p>
+            <button id="btn" onclick="trrigerBtn()">PAUSE</button>
+        </center>
+    </div>
+
+    <script>
+        const trailer = document.getElementById("trailer")
+        const btn = document.getElementById("btn")
+        function trrigerBtn() {
+            if (trailer.paused) {
+                trailer.play()
+                btn.innerHTML = "PAUSE"
+            } else {
+                trailer.pause()
+                btn.innerHTML = "PLAY"
+            }
+        }
+    </script>
+
+</body>
+
+</html>
